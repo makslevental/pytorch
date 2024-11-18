@@ -25,6 +25,8 @@ if(NOT __AOTRITON_INCLUDED)
       -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}
       -DAOTRITON_NO_PYTHON=ON
       -DAOTRITON_NO_SHARED=OFF
+      -DPython3_EXECUTABLE=${Python3_EXECUTABLE}
+      -DPYTHON_EXECUTABLE=${PYTHON_EXECUTABLE}
       # CONFIGURE_COMMAND ""
       BUILD_COMMAND ""  # No build, install command will repeat the build process due to problems in the build system.
       BUILD_BYPRODUCTS "${__AOTRITON_INSTALL_DIR}/lib/libaotriton_v2.so"
